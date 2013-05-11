@@ -56,7 +56,7 @@ var getTableData = function(done) {
 	
 	for (var i = 0; i < todoItems.length; i++) {
 		row = Ti.UI.createTableViewRow({
-			id: todoItems[i].id,
+			id: todoItems[i]._id.id,
 			title: todoItems[i].item,
 			color: '#000',
 			font: {
